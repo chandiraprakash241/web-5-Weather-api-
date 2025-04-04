@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Forecast</h1>
+        
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+        </div>
+        
+        <div class="weather-card">
+            <div class="weather-header">
+                <h2 id="city-name">--</h2>
+                <p id="current-date">--</p>
+            </div>
+            
+            <div class="weather-main">
+                <div class="temperature">
+                    <span id="temp">--</span>
+                    <span class="unit">°C</span>
+                </div>
+                <div class="weather-icon">
+                    <img id="weather-icon" src="" alt="Weather icon">
+                    <p id="weather-desc">--</p>
+                </div>
+            </div>
+            
+            <div class="weather-details">
+                <div class="detail">
+                    <i class="fas fa-tint"></i>
+                    <span id="humidity">--</span>%
+                </div>
+                <div class="detail">
+                    <i class="fas fa-wind"></i>
+                    <span id="wind">--</span> km/h
+                </div>
+            </div>
+        </div>
+        
+        <div class="error-message" id="error-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
